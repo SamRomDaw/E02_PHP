@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sintaxi de variables</title>
+</head>
+
+<body>
+    <h1>Variables</h1>
+    
+    <?php
+        
+        $operador = "+";
+        $array = array(8,8.2,true,"Cthulhu",null);
+
+        echo "Operaciones (Cambiar la variable $operador para ver los resultados de los demás operadores): <br><br>";
+
+        switch ($operador) {
+            case "-":
+                for ($i=0;$i<sizeof($array);$i++) {
+
+                echo "$array[$i]"."<br><br>";
+
+                for ($j=0;$j<sizeof($array);$j++) {
+
+                $valor = '';
+                $valor = $array[$i]-$array[$j];
+                echo $array[$i]." - ".$array[$j]." = ".$valor." -> ".gettype($valor)."<br>";
+
+            };
+            echo "<br>";
+        };
+            echo "<br>";
+
+            case "+":
+                for ($i=0;$i<sizeof($array);$i++) {
+                    
+                echo "$array[$i]"."<br><br>";
+
+                for ($j=0;$j<sizeof($array);$j++) {
+
+                $valor = '';
+                $valor = $array[$i]+$array[$j];
+                echo $array[$i]." + ".$array[$j]." = ".$valor." -> ".gettype($valor)."<br>";
+
+            };
+            echo "<br>";
+        };
+            echo "<br>";
+
+            case "*":
+                for ($i=0;$i<sizeof($array);$i++) {
+                    
+                echo "$array[$i]"."<br><br>";
+
+                for ($j=0;$j<sizeof($array);$j++) {
+
+                $valor = '';
+                $valor = $array[$i]*$array[$j];
+                echo $array[$i]." * ".$array[$j]." = ".$valor." -> ".gettype($valor)."<br>";
+
+            };
+            echo "<br>";
+        };
+            echo "<br>";
+
+            case "/":
+                for ($i=0;$i<sizeof($array);$i++) {
+                    
+                echo "$array[$i]"."<br><br>";
+
+                for ($j=0;$j<sizeof($array);$j++) {
+
+                $valor = '';
+                $valor = $array[$i]/$array[$j];
+                echo $array[$i]." / ".$array[$j]." = ".$valor." -> ".gettype($valor)."<br>";
+
+            };
+            echo "<br>";
+        };
+            echo "<br>";
+
+            case "%":
+                for ($i=0;$i<sizeof($array);$i++) {
+                    
+                echo "$array[$i]"."<br><br>";
+
+                for ($j=0;$j<sizeof($array);$j++) {
+
+                $valor = '';
+                $valor = $array[$i]%$array[$j];
+                echo $array[$i]." % ".$array[$j]." = ".$valor." -> ".gettype($valor)."<br>";
+
+            };
+            echo "<br>";
+        };
+            echo "<br>";
+            
+            case "**":
+            for ($i=0;$i<sizeof($array);$i++) {
+                
+            echo "$array[$i]"."<br><br>";
+
+            for ($j=0;$j<sizeof($array);$j++) {
+
+            $valor = '';
+            $valor = $array[$i]**$array[$j];
+            echo $array[$i]." ** ".$array[$j]." = ".$valor." -> ".gettype($valor)."<br>";
+
+        };
+        echo "<br>";
+    };
+        echo "<br>";
+
+    }
+    ?>
+
+</body>
+
+</html>
